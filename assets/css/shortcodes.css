@@ -1184,8 +1184,8 @@
 
 .heading-section .main-title span {
     color: #6844ED;
-    font-family: 'Playfair Display';
-    font-style: italic;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
     line-height: 51px;
 }
 
@@ -1912,7 +1912,11 @@ ul.list-item li {
 }
 
 ul.list-item li .icon-tick::before {
-    color: #6844ED;
+    color: #FFFFFF;
+}
+
+ul.list-item.tick-white li .icon-tick::before {
+    color: #FFFFFF !important;
 }
 
 /* list-tool */
@@ -3402,8 +3406,8 @@ ul.list-item li .icon-tick::before {
 }
 
 .wg-banner-2 .content .title span {
-    font-family: 'Playfair Display';
-    font-style: italic;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
     line-height: 67px;
 }
 
@@ -3432,6 +3436,15 @@ ul.list-item li .icon-tick::before {
     border-radius: 17px;
     box-shadow: 0px 20px 40px 0px rgba(9, 182, 162, 0.20);
     animation: to-top 5s infinite linear;
+    height: 500px !important;
+    max-height: 500px !important;
+    width: auto !important;
+    object-fit: contain;
+}
+
+.wg-banner-2 .image img.item-1 {
+    height: 500px !important;
+    width: auto !important;
 }
 
 .wg-banner-2 .image .item-3 {
@@ -3473,6 +3486,9 @@ ul.list-item li .icon-tick::before {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .doing-item.active {
@@ -3505,8 +3521,13 @@ ul.list-item li .icon-tick::before {
     background: linear-gradient(145deg, #09B6A2 0%, #55EDDB 100%);
 }
 
-.doing-item h3 a {
-    margin-bottom: 25px;
+.doing-item h3 {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    flex-shrink: 0;
 }
 
 .doing-item h3 a {
@@ -3521,6 +3542,7 @@ ul.list-item li .icon-tick::before {
 .doing-item p {
     margin-top: 8px;
     color: #C8C8C8;
+    flex-grow: 1;
 }
 
 /* wg-testimonials */
@@ -4862,6 +4884,23 @@ ul.list-item li .icon-tick::before {
 
 .step-item .content .title a:hover {
     color: #6844ED;
+}
+
+@media (min-width: 1200px) {
+    .ib-steps-wide .step-item {
+        align-items: center;
+    }
+    .ib-steps-wide .step-item .image,
+    .ib-steps-wide .step-item .content {
+        width: 48%;
+    }
+    .ib-steps-wide .step-item .image + .content.ib-content-wide {
+        width: 52%;
+        padding-top: 25px;
+    }
+    .ib-steps-wide .step-item.item1 .image {
+        width: 48%;
+    }
 }
 
 /* wg-features */
