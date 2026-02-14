@@ -2752,14 +2752,7 @@ body.page-yellow .progress-wrap svg.progress-circle path {
 /* cursor */
 /* ------------------------------------------  */
 .tf-mouse {
-    position: fixed;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    border-radius: 50%;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    visibility: hidden
+    display: none !important;
 }
 
 .tf-mouse-inner {
