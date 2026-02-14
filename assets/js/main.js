@@ -365,13 +365,13 @@ const cursor = function () {
     var retina = window.devicePixelRatio > 1 ? true : false;
       if(retina) {
         var tfheader =$('#logo_header').data('retina');
-        $('#site-logo-inner').find('img').attr({src:tfheader,width:'168px',height:'57px'});
+        $('#site-logo-inner').find('img').attr({src:tfheader});
 
         var tfmobile =$('#mobile-logo_header').data('retina');
-        $('.mobile-nav-wrap').find('img').attr({src:tfmobile,width:'168px',height:'57px'});
+        $('.mobile-nav-wrap').find('img').attr({src:tfmobile});
 
         var tffooter =$('#logo_footer').data('retina');
-        $('#logo-footer').find('img').attr({src:tffooter,width:'168px',height:'57px'});
+        $('#logo-footer').find('img').attr({src:tffooter});
       }
   };  
 

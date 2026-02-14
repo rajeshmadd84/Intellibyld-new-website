@@ -1227,6 +1227,20 @@ a:focus {
     margin-right: 101px;
 }
 
+#logo_header {
+    height: 44px !important;
+    width: auto !important;
+    max-height: 44px !important;
+    display: block;
+}
+
+#mobile-logo_header {
+    height: 36px !important;
+    width: auto !important;
+    max-height: 36px !important;
+    display: block;
+}
+
 /* main-nav */
 .main-nav {
     display: flex;
@@ -1671,6 +1685,12 @@ a:focus {
 
 .header-green .menu-primary-menu .sub-menu li:last-child {
     border: none;
+}
+
+.header.header-green.is-fixed {
+    background-color: #030014;
+    background-image: url(../images/item-background/line.png);
+    background-repeat: repeat;
 }
 
 /* header-blue */

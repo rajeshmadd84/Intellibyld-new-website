@@ -1919,6 +1919,62 @@ ul.list-item.tick-white li .icon-tick::before {
     color: #FFFFFF !important;
 }
 
+ul.list-item-top li {
+    align-items: flex-start;
+}
+
+ul.list-item-top li i {
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+.wg-steps .step-item .content ul.list-item li {
+    align-items: flex-start;
+}
+
+.wg-steps .step-item .content ul.list-item li i {
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+.wg-steps .step-item .content ul.ib-bullet-list li {
+    align-items: flex-start;
+}
+
+.wg-steps .step-item .content ul.ib-bullet-list li i {
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+.wg-steps .step-item .content ul.ib-bullet-list li span {
+    flex: 1;
+    display: block;
+}
+
+ul.ib-bullet-list li {
+    align-items: flex-start;
+}
+
+ul.ib-bullet-list li i {
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+ul.ib-bullet-list li span {
+    flex: 1;
+    display: block;
+}
+
+.ib-steps-wide .step-item .image {
+    padding: 12px !important;
+}
+
+.ib-steps-wide .step-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* list-tool */
 /* -------------------------------------------- */
 .list-tool {
@@ -4884,6 +4940,20 @@ ul.list-item.tick-white li .icon-tick::before {
 
 .step-item .content .title a:hover {
     color: #6844ED;
+}
+
+.wg-steps.ib-steps-wide .step-item .image,
+.wg-steps.ib-steps-wide .step-item.item2 .image,
+.wg-steps.ib-steps-wide .step-item.item3 .image,
+.wg-steps.ib-steps-wide .step-item.item4 .image {
+    padding: 12px !important;
+}
+
+.wg-steps.ib-steps-wide .step-item .image img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
 }
 
 @media (min-width: 1200px) {
