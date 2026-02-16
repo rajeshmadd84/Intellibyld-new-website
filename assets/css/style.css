@@ -1768,7 +1768,13 @@ a:focus {
 }
 
 #logo-footer {
-    min-width: 166px;
+    min-width: auto;
+    max-width: 133px;
+}
+
+#logo-footer img {
+    width: 100%;
+    height: auto;
 }
 
 .footer-top {
@@ -1982,7 +1988,8 @@ ul.wg-menu li a:hover {
 /* style-1 */
 #footer.style-1 {
     background-color: #111112;
-    padding-top: 269px;
+    padding-top: 200px;
+    padding-bottom: 40px;
     padding-left: 17px;
     overflow: hidden;
 }
