@@ -1778,7 +1778,7 @@ a:focus {
 }
 
 .footer-top {
-    padding-top: 218px;
+    padding-top: 50px;
     padding-bottom: 80px;
     display: flex;
     justify-content: space-between;
@@ -1987,41 +1987,38 @@ ul.wg-menu li a:hover {
 
 /* style-1 */
 #footer.style-1 {
-    background-color: #111112;
-    padding-top: 200px;
-    padding-bottom: 40px;
-    padding-left: 17px;
+    background-color: #111112 !important;
+    background-image: none !important;
+    padding: 15px 17px !important;
     overflow: hidden;
+    min-height: unset !important;
+}
+
+#footer.style-1 > .item-1,
+#footer.style-1 > .item-2 {
+    display: none;
+}
+
+#footer.style-1 p.text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#footer.style-1 .logo-footer {
+    margin-bottom: 0;
 }
 
 #footer.style-1 > .item-1 {
-    position: absolute;
-    content: '';
-    left: -108px;
-    top: -177px;
-    width: 430px;
-    height: 390px;
-    transform: rotate(-105deg);
-    background: linear-gradient(180deg, #09B6A2 0%, rgba(9, 182, 162, 0.00) 100%);
-    opacity: 0.6;
-    filter: blur(150px);
+    display: none !important;
 }
 
 #footer.style-1 > .item-2 {
-    position: absolute;
-    content: '';
-    right: -110px;
-    bottom: 46px;
-    width: 370px;
-    height: 336px;
-    background: linear-gradient(180deg, #09B6A2 0%, rgba(9, 182, 162, 0.00) 100%);
-    opacity: 0.6;
-    filter: blur(150px);
+    display: none !important;
 }
 
 #footer.style-1 .footer-bottom {
-    margin-top: 95px;
-    padding-top: 41px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 #footer.style-1 .footer-bottom ul li a:hover {
